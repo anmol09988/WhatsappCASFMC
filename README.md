@@ -1,4 +1,4 @@
-# REST API Custom Activity  for Salesforce Marketing Cloud Journey Builder 
+# Whatsapp based Custom Activity  for Salesforce Marketing Cloud Journey Builder 
 
 
 ### Pre-Requisites
