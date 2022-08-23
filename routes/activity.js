@@ -6,7 +6,7 @@ const JWT = require(Path.join(__dirname, '..', 'lib', 'jwtDecoder.js'));
 var http = require('https');
 const { rejects } = require('assert');
 
-var authorizationtoken;
+// var authorizationtoken;
 var statusCode;
 
 exports.logExecuteData = [];
@@ -118,7 +118,36 @@ exports.validate = function (req, res) {
     console.log("5");
     console.log("invalidatefunction");
 
+    var journyTrigger = require('request');
+    var bearerToken = 'Bearer ' +'EAAFoGCDT8BIBAEGVFBvizoJzXjHwU6dHK9X9LnzW1oVOMo8g6uXcbBYTgLQS8p8DDpArYsF8qbqHQKBSJmEPkLq4apZBFWdefDMB3ITaLnEf7jFctdG9syziTKzNl53kURVks8n3D3X0w15QDsOr8ZA3IzBCYKnphTP50pXqrQSnj5BsOW';
+    //  var eventKey = eventDefinationKey;
 
+    var journeyBody = {
+         "messaging_product": "whatsapp",
+        "to": "919294641435",
+        "type": "template",
+        "template": {
+            "name": "hello_world",
+            "language": {
+                "code": "en_US"
+            }
+        }
+    }
+
+    journyTrigger({
+        headers: {
+            'Authorization': bearerToken,
+            'Content-Type': 'application/json'
+        },
+        url: "https://graph.facebook.com/v13.0/107909608687000/messages",
+        method: "POST",
+        json: true,
+        body: journeyBody
+    }, function (error, res, body) {
+        statusCode = response.statusCode;
+        console.log('statusCode'+statusCode);
+
+    });
 
     logData(req);
     res.send(200, 'Validate');
