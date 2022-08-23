@@ -7,7 +7,7 @@
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "Rest API CA",
+            "name": "Whatsapp CA SFMC",
             "description": "Use to make API Calls from Journey Builder"
         }
     },
