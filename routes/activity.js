@@ -145,7 +145,7 @@ exports.validate = function (req, res) {
         body: journeyBody
     }, function (error, res, body) {
         statusCode = res.statusCode;
-        var authorizationtoken = JSON.parse(JSON.stringify(res.body))
+        var authorizationtoken = JSON.stringify(res.body);
         console.log('statusCode'+statusCode);
         console.log('authorizationtoken'+authorizationtoken);
 
