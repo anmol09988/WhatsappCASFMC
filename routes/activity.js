@@ -119,7 +119,8 @@ exports.validate = function (req, res) {
     console.log("invalidatefunction");
 
     var journyTrigger = require('request');
-    var bearerToken = 'Bearer ' +'EAAFoGCDT8BIBAC9knWkZBjqJDx3S6PUJeiWfMzpADl4rrLNCdMvrH3ZBZCIDjfblc5ZBhZB5oZBIH6lS6SG0BoN1q8WF3wB61lGvNxu4fN4rqAPd15hklqZA3b7OZANFXT4bKtnxJtWZA2pw4lxUgOeNJBwprZCCDAOTAtSUkTA1L7n0w8mTGERkUMpAs129DZCTuwZCCb4MaqGsmr692v744515';
+    var authorizationtoken = 'EAAFoGCDT8BIBAC9knWkZBjqJDx3S6PUJeiWfMzpADl4rrLNCdMvrH3ZBZCIDjfblc5ZBhZB5oZBIH6lS6SG0BoN1q8WF3wB61lGvNxu4fN4rqAPd15hklqZA3b7OZANFXT4bKtnxJtWZA2pw4lxUgOeNJBwprZCCDAOTAtSUkTA1L7n0w8mTGERkUMpAs129DZCTuwZCCb4MaqGsmr692v744515';
+    var bearerToken = 'Bearer ' + authorizationtoken;
     //  var eventKey = eventDefinationKey;
 
     var journeyBody = {
@@ -145,9 +146,9 @@ exports.validate = function (req, res) {
         body: journeyBody
     }, function (error, res, body) {
         statusCode = res.statusCode;
-        var authorizationtoken = JSON.stringify(res.body);
+        var authorizationtokensss = JSON.stringify(res.body);
         console.log('statusCode'+statusCode);
-        console.log('authorizationtoken'+authorizationtoken);
+        console.log('authorizationtokensss'+authorizationtokensss);
 
     });
 
