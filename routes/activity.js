@@ -144,7 +144,7 @@ exports.validate = function (req, res) {
         json: true,
         body: journeyBody
     }, function (error, res, body) {
-        statusCode = response.statusCode;
+        statusCode = res.statusCode;
         console.log('statusCode'+statusCode);
 
     });
