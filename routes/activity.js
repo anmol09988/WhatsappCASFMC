@@ -119,7 +119,7 @@ exports.validate = function (req, res) {
     console.log("invalidatefunction");
 
     var journyTrigger = require('request');
-    var authorizationtoken = 'EAAFoGCDT8BIBAC9knWkZBjqJDx3S6PUJeiWfMzpADl4rrLNCdMvrH3ZBZCIDjfblc5ZBhZB5oZBIH6lS6SG0BoN1q8WF3wB61lGvNxu4fN4rqAPd15hklqZA3b7OZANFXT4bKtnxJtWZA2pw4lxUgOeNJBwprZCCDAOTAtSUkTA1L7n0w8mTGERkUMpAs129DZCTuwZCCb4MaqGsmr692v744515';
+    var authorizationtoken = 'EAAFoGCDT8BIBADZCKvPlNEyxNLgXRx3nYeboMg3aGAGsurp5FsFEowtkKKzvmqVh5rRWF3sifFNiwePd3774BASzUh34tTHvfnIQovMkImhlZBg0BUiOGbDDjZBOpTMXhywz5SeEruqVC9N6LlbX1YCV0naY6UrzrBZBJSkSzDZBo6x7lROEkhPwWDikOSB29HtSJWJ4wPOyECiPfe1J0';
     var bearerToken = 'Bearer ' + authorizationtoken;
     //  var eventKey = eventDefinationKey;
 
