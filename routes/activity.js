@@ -119,7 +119,7 @@ exports.validate = function (req, res) {
     console.log("invalidatefunction");
 
     var journyTrigger = require('request');
-    var bearerToken = 'Bearer ' +'EAAFoGCDT8BIBAEGVFBvizoJzXjHwU6dHK9X9LnzW1oVOMo8g6uXcbBYTgLQS8p8DDpArYsF8qbqHQKBSJmEPkLq4apZBFWdefDMB3ITaLnEf7jFctdG9syziTKzNl53kURVks8n3D3X0w15QDsOr8ZA3IzBCYKnphTP50pXqrQSnj5BsOW';
+    var bearerToken = 'Bearer ' +'EAAFoGCDT8BIBAC9knWkZBjqJDx3S6PUJeiWfMzpADl4rrLNCdMvrH3ZBZCIDjfblc5ZBhZB5oZBIH6lS6SG0BoN1q8WF3wB61lGvNxu4fN4rqAPd15hklqZA3b7OZANFXT4bKtnxJtWZA2pw4lxUgOeNJBwprZCCDAOTAtSUkTA1L7n0w8mTGERkUMpAs129DZCTuwZCCb4MaqGsmr692v744515';
     //  var eventKey = eventDefinationKey;
 
     var journeyBody = {
