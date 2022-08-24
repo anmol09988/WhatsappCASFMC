@@ -125,7 +125,7 @@ exports.validate = function (req, res) {
 
     var journeyBody = {
          "messaging_product": "whatsapp",
-        "to": "918949782691",
+        "to": "919294641435",
         "type": "template",
         "template": {
             "name": "hello_world",
