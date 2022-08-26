@@ -134,7 +134,7 @@ exports.validate = function (req, res) {
     // console.log("SubscriberKeySubscriberKey"+SubscriberKey);
     // console.log("EmailAddressEmailAddress"+EmailAddress);
     // console.log("TimeTime"+Time);
-    console.log("eventDefinationKeyeventDefinationKey"+eventDefinationKey);
+   // console.log("eventDefinationKeyeventDefinationKey"+eventDefinationKey);
 
     // var journyTrigger = require('request');
     // var authorizationtoken = 'EAAFoGCDT8BIBAGl6No1V1MWnHZC19YKAKZC9b7uCg5SxlZClFd7MdZAmZBLT42oy4ZBGhL2BCyMLH7GeZBedb2zfFkakDk1aq1yd0fQ7yO3ZASQbFiOK2hoEUqZCGjQVhki31dO3ZA9FsZC58Sozh87p047YAhlZA0CbaqeN4LA4RqTUU1FXatF9fvTisLDK8h0AZCHZAMNLn4ZAXeDrms5iWZAT5Bui';
