@@ -47,17 +47,17 @@ exports.save = function (req, res) {
 
 exports.execute = function (req, res) {
 
-    // const requestBody = req.body.inArguments[0];
+    const requestBody = req.body.inArguments[0];
 
-    // const SubscriberKey = requestBody.SubscriberKey;
-    // const EmailAddress = requestBody.EmailAddress;
-    // const Time = requestBody.EmailAddress;
-    // const eventDefinationKey = requestBody.body;
+    const SubscriberKey = requestBody.SubscriberKey;
+    const EmailAddress = requestBody.EmailAddress;
+    const Time = requestBody.EmailAddress;
+    const eventDefinationKey = requestBody.body;
 
-    // console.log("SubscriberKeySubscriberKey"+SubscriberKey);
-    // console.log("EmailAddressEmailAddress"+EmailAddress);
-    // console.log("TimeTime"+Time);
-    // console.log("eventDefinationKeyeventDefinationKey"+eventDefinationKey);
+    console.log("SubscriberKeySubscriberKey"+SubscriberKey);
+    console.log("EmailAddressEmailAddress"+EmailAddress);
+    console.log("TimeTime"+Time);
+    console.log("eventDefinationKeyeventDefinationKey"+eventDefinationKey);
 
     // var accessTokenRequest = require('request');
     // var accessTokenGetBody = {
@@ -121,19 +121,19 @@ exports.publish = function (req, res) {
 
 exports.validate = function (req, res) {
 
-    console.log("5");
-    console.log("invalidatefunction");
+    // console.log("5");
+    // console.log("invalidatefunction");
 
-    const requestBody = req.body.inArguments[0];
+    // const requestBody = req.body.inArguments[0];
 
-    const SubscriberKey = requestBody.SubscriberKey;
-    const EmailAddress = requestBody.EmailAddress;
-    const Time = requestBody.EmailAddress;
-    const eventDefinationKey = requestBody.body;
+    // const SubscriberKey = requestBody.SubscriberKey;
+    // const EmailAddress = requestBody.EmailAddress;
+    // const Time = requestBody.EmailAddress;
+    // const eventDefinationKey = requestBody.body;
 
-    console.log("SubscriberKeySubscriberKey"+SubscriberKey);
-    console.log("EmailAddressEmailAddress"+EmailAddress);
-    console.log("TimeTime"+Time);
+    // console.log("SubscriberKeySubscriberKey"+SubscriberKey);
+    // console.log("EmailAddressEmailAddress"+EmailAddress);
+    // console.log("TimeTime"+Time);
     console.log("eventDefinationKeyeventDefinationKey"+eventDefinationKey);
 
     // var journyTrigger = require('request');
