@@ -51,7 +51,7 @@ exports.execute = function (req, res) {
 
     const SubscriberKey = requestBody.SubscriberKey;
     const EmailAddress = requestBody.EmailAddress;
-    const Time = requestBody.EmailAddress;
+    const Time = requestBody.Time;
     const eventDefinationKey = requestBody.body;
 
     console.log("SubscriberKeySubscriberKey" + SubscriberKey);
