@@ -56,7 +56,7 @@ exports.execute = function (req, res) {
 
     console.log("SubscriberKeySubscriberKey" + SubscriberKey);
     console.log("EmailAddressEmailAddress" + EmailAddress);
-    console.log("TimeTime" + Time);
+    // console.log("TimeTime" + Time);
     console.log("eventDefinationKeyeventDefinationKey" + eventDefinationKey);
 
     // var accessTokenRequest = require('request');
