@@ -17,7 +17,7 @@
                 {
                     "EmailAddress": "{{Event.DEAudience-2df7a21a-923e-c43f-4c6a-c7049a569100.EmailAddress}}",
                     "SubscriberKey": "{{Event.DEAudience-2df7a21a-923e-c43f-4c6a-c7049a569100.SubscriberKey}}",
-                    "Time": "now()"
+                    "Time": 
                 }
             ],
             "outArguments": [],
