@@ -52,12 +52,14 @@ exports.execute = function (req, res) {
     const SubscriberKey = requestBody.SubscriberKey;
     const EmailAddress = requestBody.EmailAddress;
     const Time = requestBody.Time;
+    const check =  requestBody.check;
     const eventDefinationKey = requestBody.body;
 
     console.log("SubscriberKeySubscriberKey" + SubscriberKey);
     console.log("EmailAddressEmailAddress" + EmailAddress);
-    // console.log("TimeTime" + Time);
+    // console.log("TimeTime" + Time);  
     console.log("eventDefinationKeyeventDefinationKey" + eventDefinationKey);
+    console.log("checkcheck"+check);
 
     // var accessTokenRequest = require('request');
     // var accessTokenGetBody = {
