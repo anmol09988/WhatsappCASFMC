@@ -57,6 +57,8 @@ exports.execute = function (req, res) {
     console.log("SubscriberKeySubscriberKey" + SubscriberKey);
     console.log("EmailAddressEmailAddress" + EmailAddress);
     console.log("TimeTime" + Time);  
+    console.log("Time3Time3"+Time3);
+    console.log("Time2Time2"+Time2);
     console.log("eventDefinationKeyeventDefinationKey" + eventDefinationKey);
     console.log("checkcheck"+ check);
 
