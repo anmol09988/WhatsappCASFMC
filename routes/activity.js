@@ -46,7 +46,6 @@ exports.save = function (req, res) {
 };
 
 exports.execute = function (req, res) {
-
     const requestBody = req.body.inArguments[0];
 
     const SubscriberKey = requestBody.SubscriberKey;
@@ -57,9 +56,9 @@ exports.execute = function (req, res) {
 
     console.log("SubscriberKeySubscriberKey" + SubscriberKey);
     console.log("EmailAddressEmailAddress" + EmailAddress);
-    // console.log("TimeTime" + Time);  
+    console.log("TimeTime" + Time);  
     console.log("eventDefinationKeyeventDefinationKey" + eventDefinationKey);
-    console.log("checkcheck"+check);
+    console.log("checkcheck"+ check);
 
     // var accessTokenRequest = require('request');
     // var accessTokenGetBody = {
