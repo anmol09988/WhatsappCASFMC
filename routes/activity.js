@@ -44,7 +44,6 @@ exports.save = function (req, res) {
     logData(req);
     res.send(200, 'Save');
 };
-
 exports.execute = function (req, res) {
     const requestBody = req.body.inArguments[0];
 
