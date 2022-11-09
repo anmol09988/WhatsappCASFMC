@@ -167,7 +167,7 @@ exports.validate = function (req, res) {
     var authorizationtoken = 'EAAFoGCDT8BIBABP5YYs7WLRXASmdSerfWBfCcUdhTDr4S1gXik9AZCb0yHX2rSRPgFkZAc7ReIIb6sNrTXiGwKf86EExisQc8wfAR4VLPpfEM4tkPSeDybhiDx6tw5MZBXQnZBEbZAHn5DzWtga6WMf0exfHOQHuZAr6wNo5ZCL5vTwjqcPqKZAZC';
     var bearerToken = 'Bearer ' + authorizationtoken;
     //  var eventKey = eventDefinationKey;
-
+    console.log('INVALIDATEFUNCTION2');
     var journeyBody = {
          "messaging_product": "whatsapp",
         "to": "919294641435",
@@ -179,6 +179,7 @@ exports.validate = function (req, res) {
             }
         }
     }
+    console.log('INVALIDATEFUNCTION3');
 
     journyTrigger({
         headers: {
@@ -194,6 +195,7 @@ exports.validate = function (req, res) {
         var authorizationtokensss = JSON.stringify(res.body);
         console.log('statusCode'+statusCode);
         console.log('authorizationtokensss'+authorizationtokensss);
+        console.log('INVALIDATEFUNCTION4');
     });
     logData(req);
     res.send(200, 'Validate');
