@@ -60,39 +60,5 @@ exports.publish = function (req, res) {
 
 exports.validate = function (req, res) {
 
-    console.log('INVALIDATEFUNCTION');
-
-    var journyTrigger = require('request');
-    var authorizationtoken = 'EAAFoGCDT8BIBABEpZAaujP4y5epytjwZCT5qzGF6NDrHTRQgLO4BsmibruycZA2uieiZBVqnMYVtPZAbX9ymmL3SQJjCFhUgMufwoYtcx1NljWZAGpmlc6XKrcywBIz4tqRZBZBIxStKH1iViAZBYKURQyRmO5ru01T5PMZB8zqwzx2jZBIfmPbmZA95xpLk4kq6px5QfsS2ZAGZAMLOvUSNti8p13';
-    var bearerToken = 'Bearer ' + authorizationtoken;
-  
-    var journeyBody = {
-         "messaging_product": "whatsapp",
-        "to": "919294641435",
-        "type": "template",
-        "template": {
-            "name": "hello_world",
-            "language": {
-                "code": "en_US"
-            }
-        }
-    }
-
-    journyTrigger({
-        headers: {
-            'Authorization': bearerToken,
-            'Content-Type': 'application/json'
-        },
-        url: "https://graph.facebook.com/v13.0/107909608687000/messages",
-        method: "POST",
-        json: true,
-        body: journeyBody
-    }, function (error, res, body) {
-        statusCode = res.statusCode;
-        var authorizationtokensss = JSON.stringify(res.body);
-        console.log('statusCode'+statusCode);
-        console.log('authorizationtokensss'+authorizationtokensss);
-    });
-    logData(req);
-    res.send(200, 'Validate');
+       res.send(200, 'Validate');
 };
