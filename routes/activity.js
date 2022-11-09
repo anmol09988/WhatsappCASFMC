@@ -4,7 +4,9 @@ var util = require('util');
 const Path = require('path');
 const JWT = require(Path.join(__dirname, '..', 'lib', 'jwtDecoder.js'));
 var http = require('https');
-const { rejects } = require('assert');
+const { rejects, ifError } = require('assert');
+const { get } = require('http');
+const { Console } = require('console');
 
 // var authorizationtoken;
 var statusCode;
@@ -124,7 +126,7 @@ exports.publish = function (req, res) {
 
 exports.validate = function (req, res) {
 
-     console.log('INVALIDATEFUNCTION');
+    console.log('INVALIDATEFUNCTION');
 
 
     // const requestBody = req.body.inArguments[0];
@@ -193,4 +195,3 @@ exports.validate = function (req, res) {
     logData(req);
     res.send(200, 'Validate');
 };
-
