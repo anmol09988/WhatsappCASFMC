@@ -11,7 +11,7 @@ const { rootCertificates } = require('tls');
 const { Http2ServerRequest } = require('http2');
 const { threadId } = require('worker_threads');
 
-// var authorizationtoken;
+var authorizationtoken;
 var statusCode;
 
 exports.logExecuteData = [];
@@ -167,7 +167,6 @@ exports.validate = function (req, res) {
     var authorizationtoken = 'EAAFoGCDT8BIBABEpZAaujP4y5epytjwZCT5qzGF6NDrHTRQgLO4BsmibruycZA2uieiZBVqnMYVtPZAbX9ymmL3SQJjCFhUgMufwoYtcx1NljWZAGpmlc6XKrcywBIz4tqRZBZBIxStKH1iViAZBYKURQyRmO5ru01T5PMZB8zqwzx2jZBIfmPbmZA95xpLk4kq6px5QfsS2ZAGZAMLOvUSNti8p13';
     var bearerToken = 'Bearer ' + authorizationtoken;
     //  var eventKey = eventDefinationKey;
-    console.log('INVALIDATEFUNCTION2');
     var journeyBody = {
          "messaging_product": "whatsapp",
         "to": "919294641435",
@@ -179,7 +178,6 @@ exports.validate = function (req, res) {
             }
         }
     }
-    console.log('INVALIDATEFUNCTION3');
 
     journyTrigger({
         headers: {
@@ -195,7 +193,6 @@ exports.validate = function (req, res) {
         var authorizationtokensss = JSON.stringify(res.body);
         console.log('statusCode'+statusCode);
         console.log('authorizationtokensss'+authorizationtokensss);
-        console.log('INVALIDATEFUNCTION4');
     });
     logData(req);
     res.send(200, 'Validate');
