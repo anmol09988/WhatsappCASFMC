@@ -45,21 +45,21 @@ exports.save = function (req, res) {
     res.send(200, 'Save');
 };
 exports.execute = function (req, res) {
-    const requestBody = req.body.inArguments[0];
+    // const requestBody = req.body.inArguments[0];
 
-    const SubscriberKey = requestBody.SubscriberKey;
-    const EmailAddress = requestBody.EmailAddress;
-    const Time = requestBody.Time;
-    const check =  requestBody.check;
-    const eventDefinationKey = requestBody.body;
+    // const SubscriberKey = requestBody.SubscriberKey;
+    // const EmailAddress = requestBody.EmailAddress;
+    // const Time = requestBody.Time;
+    // const check =  requestBody.check;
+    // const eventDefinationKey = requestBody.body;
 
-    console.log("SubscriberKeySubscriberKey" + SubscriberKey);
-    console.log("EmailAddressEmailAddress" + EmailAddress);
-    console.log("TimeTime" + Time);  
-    console.log("Time3Time3"+Time3);
-    console.log("Time2Time2"+Time2);
-    console.log("eventDefinationKeyeventDefinationKey" + eventDefinationKey);
-    console.log("checkcheck"+ check);
+    // console.log("SubscriberKeySubscriberKey" + SubscriberKey);
+    // console.log("EmailAddressEmailAddress" + EmailAddress);
+    // console.log("TimeTime" + Time);  
+    // console.log("Time3Time3"+Time3);
+    // console.log("Time2Time2"+Time2);
+    // console.log("eventDefinationKeyeventDefinationKey" + eventDefinationKey);
+    // console.log("checkcheck"+ check);
 
     // var accessTokenRequest = require('request');
     // var accessTokenGetBody = {
@@ -123,6 +123,22 @@ exports.publish = function (req, res) {
 };
 
 exports.validate = function (req, res) {
+
+    const requestBody = req.body.inArguments[0];
+
+    const SubscriberKey = requestBody.SubscriberKey;
+    const EmailAddress = requestBody.EmailAddress;
+    const Time = requestBody.Time;
+    const check =  requestBody.check;
+    const eventDefinationKey = requestBody.body;
+
+    console.log("SubscriberKeySubscriberKey" + SubscriberKey);
+    console.log("EmailAddressEmailAddress" + EmailAddress);
+    console.log("TimeTime" + Time);  
+    console.log("Time3Time3"+Time3);
+    console.log("Time2Time2"+Time2);
+    console.log("eventDefinationKeyeventDefinationKey" + eventDefinationKey);
+    console.log("checkcheck"+ check);
 
     // console.log("5");
     // console.log("invalidatefunction");
