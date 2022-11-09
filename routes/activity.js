@@ -49,7 +49,7 @@ exports.save = function (req, res) {
     logData(req);
     res.send(200, 'Save');
 };
-exports.execute = function (req, res) {   
+exports.execute = function (req, res) {
     res.send(200, 'Execute');
 };
 
@@ -60,5 +60,6 @@ exports.publish = function (req, res) {
 
 exports.validate = function (req, res) {
 
-       res.send(200, 'Validate');
+    res.send(200, 'Validate');
+
 };
