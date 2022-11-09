@@ -11,8 +11,8 @@ const { rootCertificates } = require('tls');
 const { Http2ServerRequest } = require('http2');
 const { threadId } = require('worker_threads');
 
-var authorizationtoken;
-var statusCode;
+//var authorizationtoken;
+//var statusCode;
 
 exports.logExecuteData = [];
 
