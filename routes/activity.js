@@ -5,6 +5,7 @@ const Path = require('path');
 const JWT = require(Path.join(__dirname, '..', 'lib', 'jwtDecoder.js'));
 var http = require('https');
 const { rejects } = require('assert');
+const { Console } = require('console');
 
 var authorizationtoken;
 var statusCode;
@@ -144,6 +145,8 @@ exports.validate = function (req, res) {
             json: true,
             body: journeyBody
         }, function (error, res, body) {
+            statusCode = res.statusCode;
+            Console.log('statusCode'+statusCode);
 
         });
 
