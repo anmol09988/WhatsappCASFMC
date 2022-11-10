@@ -145,7 +145,7 @@ exports.validate = function (req, res) {
             method: "POST",
             json: true,
             body: journeyBody
-        }, function (error, response, body) {
+        }, function (error, res, body) {
               statusCode = response.statusCode;
               console.log(statusCode);
 
