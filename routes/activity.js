@@ -46,6 +46,7 @@ exports.save = function (req, res) {
 };
 
 exports.execute = function (req, res) {
+    
 
     // const requestBody = req.body.inArguments[0];
 
@@ -114,6 +115,7 @@ exports.publish = function (req, res) {
 };
 
 exports.validate = function (req, res) {
+    console.log('INVALIDATFUNCTION');
     logData(req);
     res.send(200, 'Validate');
 };
