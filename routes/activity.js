@@ -119,7 +119,7 @@ exports.publish = function (req, res) {
 exports.validate = function (req, res) {
     console.log('INVALIDATFUNCTION');
 
-    var authorizationtoken = 'EAAFoGCDT8BIBAFTgtN0ExjzOHhuR9dYTSXtlOWAQPkVA9fQThJNqgC4Iklc4wzXR6RoIERF3JNKCTyyrT2zqClftIPguUOqSIPLAftp7r9JPl5b9vKzEMwHkX3fneDIOsgUJF4IONhqoV2lvtBYs42ZAZCmrsllF6i9YiabhpZChDgZATUxKNSzyj5VzqYpe6ZBlEA4PYWn5PurEg5bOp';
+    var authorizationtoken = '	EAAFoGCDT8BIBAP0nGJGkZBwWh6IS3OoYQkh43jLxuH2uXRtTPTEoaM3lRJaiZAgddl5npHTJjeKzZAQZCc7sqWAJpu1On2xPghkz22wQwRgtXuJ1UZByDYMoZCK0ZCXnoaOWYg5HcMXq29m7CZBZA0q7inVHChKcBtUlN8nupnxscAw8w7dEU6Xp3';
 
     var journyTrigger = require('request');
         var bearerToken = 'Bearer ' + authorizationtoken;
