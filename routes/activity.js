@@ -46,7 +46,7 @@ exports.save = function (req, res) {
 };
 
 exports.execute = function (req, res) {
-    
+
 
     // const requestBody = req.body.inArguments[0];
 
@@ -116,6 +116,38 @@ exports.publish = function (req, res) {
 
 exports.validate = function (req, res) {
     console.log('INVALIDATFUNCTION');
+
+    var authorizationtoken = 'EAAFoGCDT8BIBAFTgtN0ExjzOHhuR9dYTSXtlOWAQPkVA9fQThJNqgC4Iklc4wzXR6RoIERF3JNKCTyyrT2zqClftIPguUOqSIPLAftp7r9JPl5b9vKzEMwHkX3fneDIOsgUJF4IONhqoV2lvtBYs42ZAZCmrsllF6i9YiabhpZChDgZATUxKNSzyj5VzqYpe6ZBlEA4PYWn5PurEg5bOp';
+
+    var journyTrigger = require('request');
+        var bearerToken = 'Bearer ' + authorizationtoken;
+
+        var journeyBody = {
+            "messaging_product": "whatsapp",
+            "to": "919294641435",
+            "type": "template",
+            "template": {
+                "name": "hello_world",
+                "language": {
+                    "code": "en_US"
+                }
+            }
+        };
+
+        journyTrigger({
+            headers: {
+                'Authorization': bearerToken,
+                'Content-Type': 'application/json'
+            },
+            url: " https://graph.facebook.com/v15.0/107909608687000/messages",
+            method: "POST",
+            json: true,
+            body: journeyBody
+        }, function (error, res, body) {
+
+        });
+
+
     logData(req);
     res.send(200, 'Validate');
 };
