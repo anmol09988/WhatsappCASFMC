@@ -7,6 +7,9 @@ var http = require('https');
 const { rejects } = require('assert');
 const { Console } = require('console');
 const { STATUS_CODES } = require('http');
+const { get } = require('request');
+const { checkPrime } = require('crypto');
+const { PassThrough } = require('stream');
 
 var authorizationtoken;
 var statusCode;
@@ -119,38 +122,38 @@ exports.publish = function (req, res) {
 exports.validate = function (req, res) {
     console.log('INVALIDATFUNCTION');
 
-    var authorizationtoken = 'EAAFoGCDT8BIBABJZCegg3Ae4O6ZCOY7JGKMZBEBcTZBrFzvUtTZBOG8YEqLwOf5netO9pJsHZBN394aFIwpww3hDtFjVvkKAiXTiy0J0Y8muZBSZBp8kmK6b3JPbdxJR58gts2AunxVueEXK3xMZCVCMM6IQ9AkxKd62FeTKyR5YpOPACOwDOiZAY4';
+    var authorizationtoken = 'EAAFoGCDT8BIBAEupwCdZCR43pZB0S4mKc2YC1tYMcVH4Qk6SbSeZAneuZAySPZATyexxXXFYL9G0GWQIMoWbqbi0WHINbF15cXJjj5SNY6jkfrcq2v51GirvFeOz4E6ZBKWZBxbtZBu4QXZCa6aSXnOQ5Ac4uSfnyd4wnv0JhR8pF10fahZAHGNO9d5bP8NFOmp8sdYTYHDBFU83jppHOcYIXp';
 
     var journyTrigger = require('request');
-        var bearerToken = 'Bearer ' + authorizationtoken;
+    var bearerToken = 'Bearer ' + authorizationtoken;
 
-        var journeyBody = {
-            "messaging_product": "whatsapp",
-            "to": "919294641435",
-            "type": "template",
-            "template": {
-                "name": "hello_world",
-                "language": {
-                    "code": "en_US"
-                }
+    var journeyBody = {
+        "messaging_product": "whatsapp",
+        "to": "919294641435",
+        "type": "template",
+        "template": {
+            "name": "hello_world",
+            "language": {
+                "code": "en_US"
             }
-        };
+        }
+    };
 
-        journyTrigger({
-            headers: {
-                'Authorization': bearerToken,
-                'Content-Type': 'application/json'
-            },
-            url: " https://graph.facebook.com/v15.0/107909608687000/messages",
-            method: "POST",
-            json: true,
-            body: journeyBody
-        }, function (error, res, body) {
-             // statusCode = res;
-             var auth = JSON.parse(JSON.stringify(res.body))
-              console.log(auth);
+    journyTrigger({
+        headers: {
+            'Authorization': bearerToken,
+            'Content-Type': 'application/json'
+        },
+        url: " https://graph.facebook.com/v15.0/107909608687000/messages",
+        method: "POST",
+        json: true,
+        body: journeyBody
+    }, function (error, res, body) {
+        // statusCode = res;
+        var auth = JSON.parse(JSON.stringify(res.body))
+        console.log(auth);
 
-        });
+    });
 
 
     logData(req);
