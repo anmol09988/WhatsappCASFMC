@@ -122,16 +122,16 @@ exports.publish = function (req, res) {
 exports.validate = function (req, res) {
     console.log('INVALIDATFUNCTION');
 
+    const axios = require('axios');
+
     var authorizationtoken = 'EAAFoGCDT8BIBABbdcRbsDgm33KJBWHPZCuk0aSx90NEXIvfFwWgu2JMzuhQUSxTrfvWtXnUZCw3vwQA3fadgnZCCEd31K87yZBreZCpZCxftZCEmBW09rh8UwgyhnXD0mHj7k1ELfV7CGkpFJaTg5LfMkw0nwGG94AnHlzSw6LQ523eLimx73FBVo40gCzpDEJYSRPtkmRoWHIGukQMOg09';
 
     // var journyTrigger = require('request');
     var bearerToken = 'Bearer ' + authorizationtoken;
-
-
-    var axios = require('axios');
+    
    // var data = '{\r\n    "messaging_product": "whatsapp",\r\n    "to": "00000000000",\r\n    "type": "template",\r\n    "template": {\r\n        "name": "hello_world",\r\n        "language": {\r\n            "code": "en_US"\r\n        }\r\n    },\r\n}';
 
-   var journeyBody = {
+   var data = {
     "messaging_product": "whatsapp",
     "to": "919294641435",
     "type": "template",
