@@ -5,10 +5,10 @@ const Path = require('path');
 const JWT = require(Path.join(__dirname, '..', 'lib', 'jwtDecoder.js'));
 var http = require('https');
 const { rejects } = require('assert');
-const { Console } = require('console');
+const { Console, debug } = require('console');
 const { STATUS_CODES } = require('http');
 const { get } = require('request');
-const { checkPrime } = require('crypto');
+const { checkPrime, getRandomValues } = require('crypto');
 const { PassThrough } = require('stream');
 
 var authorizationtoken;
@@ -122,7 +122,7 @@ exports.publish = function (req, res) {
 exports.validate = function (req, res) {
     console.log('INVALIDATFUNCTION');
 
-    var authorizationtoken = 'EAAFoGCDT8BIBAEupwCdZCR43pZB0S4mKc2YC1tYMcVH4Qk6SbSeZAneuZAySPZATyexxXXFYL9G0GWQIMoWbqbi0WHINbF15cXJjj5SNY6jkfrcq2v51GirvFeOz4E6ZBKWZBxbtZBu4QXZCa6aSXnOQ5Ac4uSfnyd4wnv0JhR8pF10fahZAHGNO9d5bP8NFOmp8sdYTYHDBFU83jppHOcYIXp';
+    var authorizationtoken = 'EAAFoGCDT8BIBAMlQZBxsL0EfwDWv5TdIOD9fes6PEixO65hf7gAjJN204cZCERkFkEXoJnmiZAx4VbQqZCati2HBezbPz9XfAKsoun7XjZCpKZANXG0BVWFzZAen7ZCiKEJZAZCqg3aqr7HzVD9idjCHdd4ee9gXCDdk4FbbGT4RXoCpaPGYepiTLKkZA59cfLYHoW3i0zp6BnSFCZBrZABvsJEQ4';
 
     var journyTrigger = require('request');
     var bearerToken = 'Bearer ' + authorizationtoken;
