@@ -83,8 +83,8 @@ define([
 
         payload['arguments'].execute.inArguments = [{
             "body": body,
-            "EmailAddress": "{{Event.DEAudience-2df7a21a-923e-c43f-4c6a-c7049a569100.EmailAddress}}",
-            "SubscriberKey": "{{Event.DEAudience-2df7a21a-923e-c43f-4c6a-c7049a569100.SubscriberKey}}",
+            "EmailAddress": "{{Event.DEAudience-9fc3dca8-34d4-44b5-d634-c578e96431de.EmailAddress}}",
+            "SubscriberKey": "{{Event.DEAudience-9fc3dca8-34d4-44b5-d634-c578e96431de.SubscriberKey}}",
             "Time": "12:30",
             "check": "Hello"
         }];
