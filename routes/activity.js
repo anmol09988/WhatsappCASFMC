@@ -10,6 +10,8 @@ const { STATUS_CODES } = require('http');
 const { get } = require('request');
 const { checkPrime, getRandomValues } = require('crypto');
 const { PassThrough } = require('stream');
+const { BADFLAGS } = require('dns');
+const { platform } = require('os');
 
 var authorizationtoken;
 var statusCode;
@@ -122,7 +124,7 @@ exports.publish = function (req, res) {
 exports.validate = function (req, res) {
     console.log('INVALIDATFUNCTION');
 
-    var authorizationtoken = 'EAAFoGCDT8BIBAPtfRiKiGxIazs6JXfbyBbMJraLyY9LV0hctFBmzvWmQaDM99Q0ZB53seZB2hpCZAiVax80hXvwq3kVBNbbnTUoqfBbtDZCgE5Gf3gHuGvRMZBsLksVuk9eJcUzdplScq2SMDye5oDQoDZAZCkhb7A2kC6CZBlTVpT0EBPx3y1GPsJYiQKUPXTRc6zrZCpNtRTAerMJcGPjSd';
+    var authorizationtoken = 'EAAFoGCDT8BIBAJ5lo4evdwqGFMV5ySfpo1Xgc7bwyQQ78k2RkYRzJ5EtZCG05gFmYjT3z8pJqZA7ZCXQji5PzIiupPNYdE5SWSiCxeYgXG5Yw1Ii6JIZCtvyqZAlRaqQe1HPKaOJ2G6leAuWUccVW5XNZBrxZAyrEJ1e7gGPEOzQAuVLqDEiNDP';
 
     var journyTrigger = require('request');
     var bearerToken = 'Bearer ' + authorizationtoken;
@@ -157,4 +159,4 @@ exports.validate = function (req, res) {
 
     logData(req);
     res.send(200, 'Validate');
-};
+};       
