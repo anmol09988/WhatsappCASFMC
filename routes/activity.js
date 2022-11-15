@@ -128,6 +128,7 @@ exports.validate = function (req, res) {
 
     var journyTrigger = require('request');
     var bearerToken = 'Bearer ' + authorizationtoken;
+    console.log('bearerToken'+bearerToken);
 
     var journeyBody = {
         "messaging_product": "whatsapp",
