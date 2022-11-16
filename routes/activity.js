@@ -87,8 +87,8 @@ exports.validate = function (req, res) {
 
     journyTrigger({
         headers: {
-            'Authorization : ': bearerToken,
-            'Content-Type : ': 'application/json'
+            'Authorization': bearerToken,
+            'Content-Type': 'application/json'
         },
         url: "https://graph.facebook.com/v15.0/107909608687000/messages",
         method: "POST",
