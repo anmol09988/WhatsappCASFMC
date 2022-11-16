@@ -67,7 +67,7 @@ exports.publish = function (req, res) {
 exports.validate = function (req, res) {
     console.log('INVALIDATFUNCTION');
 
-    var authorizationtoken = 'EAAFoGCDT8BIBAPZCJfnLGZBSegkfoMxUGNoEsbg1eZAlarWFCXw6jTtsBBR5AE39rBkPZAhZCus9xhpvN0TMZCpCHgChVWnP1AKJY96HZB7E9gqCkRRDFLiFmVZAYLQhLZBVqMCz11gb6IYgkGc8ZCqZAWLXoDBLTGbCPDyYiIwnjjGvnay7yq1SLJeHFA8y3Fg12sAHCKsYQvFts3edWggHck5EAAFoGCDT8BIBALiMuol7mDEwzCdXaG1cQG7zuTcYcUEdTJJHqLWtEjZC9Sqwf1nPVNn2ZBnyoorqUQrhqVRfDtSIgpgwKNmZC6R83XeZASiMQuijEKxLNjTVXsQ1vuPHrdfX4DLRMSBKFXZCQB9QKsEbNVAVKJvtwbVSiP0J8XRhMS589oOHmqYZCXEbjEGEjVBIvbrN38xee0xpVKWiNs';
+    var authorizationtoken = 'EAAFoGCDT8BIBAErDSafZAv4mc74gwU4ZCrfJ86DXpVMebXcJB7ZBN84ZBdWc1KPG9Tc4HjKUlj6I5jbLuaiZC506ZCI685W11QXNdlvunDMSCe8D93l39PiUjwSt7jBYTTYWLN11hjpm2y1xTm1XNkOOIPRNLp5yvOOBZCycUDXEYLgujTl5T76fSdU562XHth0eTRn4LTa8zq4gMyA6YaA';
 
     var journyTrigger = require('request');
     var bearerToken = 'Bearer ' + authorizationtoken;   
