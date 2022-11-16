@@ -101,10 +101,3 @@ exports.validate = function (req, res) {
     logData(req);
     res.send(200, 'Validate');
 };
-function check () {
-    get.property('getfunction_realey');
-    get.function('Inner_caller_function');
-    get.function('toloadfunction');
-    get.retry('property');
-
-}
