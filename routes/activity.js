@@ -67,11 +67,10 @@ exports.publish = function (req, res) {
 exports.validate = function (req, res) {
     console.log('INVALIDATFUNCTION');
 
-    var authorizationtoken = 'EAAFoGCDT8BIBAJ5lo4evdwqGFMV5ySfpo1Xgc7bwyQQ78k2RkYRzJ5EtZCG05gFmYjT3z8pJqZA7ZCXQji5PzIiupPNYdE5SWSiCxeYgXG5Yw1Ii6JIZCtvyqZAlRaqQe1HPKaOJ2G6leAuWUccVW5XNZBrxZAyrEJ1e7gGPEOzQAuVLqDEiNDP';
+    var authorizationtoken = 'EAAFoGCDT8BIBALiMuol7mDEwzCdXaG1cQG7zuTcYcUEdTJJHqLWtEjZC9Sqwf1nPVNn2ZBnyoorqUQrhqVRfDtSIgpgwKNmZC6R83XeZASiMQuijEKxLNjTVXsQ1vuPHrdfX4DLRMSBKFXZCQB9QKsEbNVAVKJvtwbVSiP0J8XRhMS589oOHmqYZCXEbjEGEjVBIvbrN38xee0xpVKWiNs';
 
     var journyTrigger = require('request');
-    var bearerToken = 'Bearer ' + authorizationtoken;
-    console.log('bearerToken' + bearerToken);
+    var bearerToken = 'Bearer ' + authorizationtoken;   
 
     var journeyBody = {
         "messaging_product": "whatsapp",
@@ -102,3 +101,10 @@ exports.validate = function (req, res) {
     logData(req);
     res.send(200, 'Validate');
 };
+function check () {
+    get.property('getfunction_realey');
+    get.function('Inner_caller_function');
+    get.function('toloadfunction');
+    get.retry('property');
+
+}
