@@ -67,10 +67,10 @@ exports.publish = function (req, res) {
 exports.validate = function (req, res) {
     console.log('INVALIDATFUNCTION');
 
-    var authorizationtoken = 'EAAFoGCDT8BIBAErDSafZAv4mc74gwU4ZCrfJ86DXpVMebXcJB7ZBN84ZBdWc1KPG9Tc4HjKUlj6I5jbLuaiZC506ZCI685W11QXNdlvunDMSCe8D93l39PiUjwSt7jBYTTYWLN11hjpm2y1xTm1XNkOOIPRNLp5yvOOBZCycUDXEYLgujTl5T76fSdU562XHth0eTRn4LTa8zq4gMyA6YaA';
+    var authorizationtoken = 'EAAFoGCDT8BIBAB37S9kjPxk4D96aQ14B8ZChtCfPwgGS3hI2Lcm0p8hTedXk9WGeZCFwrwZAdqZCsQDhcV1mgNuaruaiUuQiIcmhvOpHD5jSEpM9YsOOAaZBtuglBhSMy9sB2y1kWgTiObfsE994nmeAG7Wcpg0r4VhZB0kpWLKJjYH5OIrkKjGZBVGLYySqT1avZB82og09jZBOjS3pZAozFJ';
 
     var journyTrigger = require('request');
-    var bearerToken = 'Bearer ' + authorizationtoken;   
+    var bearerToken = 'Bearer ' + authorizationtoken;
 
     var journeyBody = {
         "messaging_product": "whatsapp",
@@ -101,3 +101,4 @@ exports.validate = function (req, res) {
     logData(req);
     res.send(200, 'Validate');
 };
+
